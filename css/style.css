@@ -1,0 +1,88 @@
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #f5f6fa;
+  text-align: center;
+  padding: 30px;
+  direction: rtl;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: rgb(0, 114, 255);
+}
+
+#status {
+  margin-bottom: 20px;
+  color: rgb(83, 160, 255);
+}
+
+#stage {
+  color: rgb(83, 160, 255);
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#green {
+  background-color: #2ecc71;
+}
+#red {
+  background-color: #e74c3c;
+}
+#yellow {
+  background-color: #f1c40f;
+}
+#blue {
+  background-color: #3498db;
+}
+
+
+.active {
+  opacity: 0.6;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 2; }
+  100% { opacity: 1; }
+}
+
+
+#start {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: linear-gradient(to right, #00c6ff, rgb(0, 114, 255));
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
